@@ -35,11 +35,11 @@ import requests
 import zipfile
 import seaborn as sns
 
-from utils import (storage_to_numpy, storage_to_dataframe, 
+from opencap.utils import (storage_to_numpy, storage_to_dataframe, 
                    download_kinematics, import_metadata, numpy_to_storage)
-from utilsProcessing import (segment_squats, segment_STS, adjust_muscle_wrapping,
+from opencap.utilsProcessing import (segment_squats, segment_STS, adjust_muscle_wrapping,
                              generate_model_with_contacts)
-from settingsOpenSimAD import get_setup
+from opencap.UtilsDynamicSimulations.OpenSimAD.settingsOpenSimAD import get_setup
 
 # %% Filter numpy array.
 def filterNumpyArray(array, time, cutoff_frequency=6, order=4):

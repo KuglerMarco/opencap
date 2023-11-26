@@ -11,9 +11,9 @@
     of the License at http://www.apache.org/licenses/LICENSE-2.0
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either expressions and
+    limitations under the License.s or implied.
+    See the License for the specific language governing permis
 '''
 
 import os
@@ -61,7 +61,7 @@ def get_mtu_length_and_moment_arm(pathModel, data, coordinates_table,
     import opensim
     
     # Create temporary motion file.
-    from utils import numpy_to_storage  
+    from opencap.utils import numpy_to_storage  
     labels = ['time'] + coordinates_table      
     time = np.linspace(0, data.shape[0]/100-0.01, data.shape[0])    
     c_data = np.concatenate((np.expand_dims(time, axis=1), data),axis=1)

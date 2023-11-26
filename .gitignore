@@ -8,6 +8,7 @@ Data/*
 *DS_Store
 
 UtilsDynamicSimulations/OpenSimAD/build-ExpressionGraphF/*
+UtilsDynamicSimulations/OpenSimAD/build-ExpressionGraphF_treadmill/*
 UtilsDynamicSimulations/OpenSimAD/build-ExternalFunctionF/*
 UtilsDynamicSimulations/OpenSimAD/install-ExternalFunctionF/*
 UtilsDynamicSimulations/OpenSimAD/opensimAD-install/*

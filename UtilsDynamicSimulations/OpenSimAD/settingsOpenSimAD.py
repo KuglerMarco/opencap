@@ -28,7 +28,7 @@ def get_setup(motion_type):
 
     setups = {}   
     setups['other'] = {
-        'ipopt_tolerance': 3,
+        'ipopt_tolerance': 1,
         'weights': {
             'positionTrackingTerm': 100,
             'velocityTrackingTerm': 10,
@@ -81,7 +81,7 @@ def get_setup(motion_type):
         'filter_Qdds_toTrack': True,
         'cutoff_freq_Qdds': 30,
         'splineQds': True,
-        'meshDensity': 100,
+        'meshDensity': 20,
         'yCalcnToes': True}
     
     setups['running'] = {
@@ -201,7 +201,7 @@ def get_setup(motion_type):
             'hip_flexion_l': 400}}
     
     setups['walking'] = {
-        'ipopt_tolerance': 3,
+        'ipopt_tolerance': 1,
         'weights': {
             'positionTrackingTerm': 10,
             'velocityTrackingTerm': 10,
@@ -250,7 +250,7 @@ def get_setup(motion_type):
         'enableLimitTorques': True,
         'filter_Qs_toTrack': True,
         'cutoff_freq_Qs': 6,
-        'meshDensity': 100}
+        'meshDensity': 20}
     
     # This is a non-periodic walking formulation. It helps to start .5s before
     # and end .3 seconds after
@@ -371,7 +371,7 @@ def get_setup(motion_type):
         'meshDensity': 100}
     
     setups['sit_to_stand'] = {
-        'ipopt_tolerance': 3,
+        'ipopt_tolerance': 2,
         'weights': {
             'positionTrackingTerm': 50,
             'velocityTrackingTerm': 10,
@@ -431,7 +431,7 @@ def get_setup(motion_type):
         'filter_Qdds_toTrack': True,
         'cutoff_freq_Qdds': 4,
         'splineQds': True,
-        'meshDensity': 50}
+        'meshDensity': 25}
     
     setups['squats'] = {
         'ipopt_tolerance': 3,
@@ -497,9 +497,10 @@ def get_setup(motion_type):
         'cutoff_freq_Qdds': 4,
         'splineQds': True,
         'heel_vGRF_threshold': 5,
-        'meshDensity': 50}
+        'meshDensity': 10}
         
     setups['jumping'] = {
+        'ipopt_tolerance': 2,
         'weights': {
             'positionTrackingTerm': 100,
             'velocityTrackingTerm': 10,
@@ -553,7 +554,7 @@ def get_setup(motion_type):
         'filter_Qdds_toTrack': True,
         'cutoff_freq_Qdds': 10,
         'splineQds': True,
-        'meshDensity': 50,
+        'meshDensity': 10,
         'yCalcnToes': True,
         }
     
